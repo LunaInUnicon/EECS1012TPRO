@@ -1,8 +1,10 @@
-function testJS()
-{
-
-var b = document.getElementById('name').value
-
-document.getElementById('here').innerHTML = b;
-
+let once = function(fn) {
+    let caller = true;
+    return function() {
+        if(caller) {
+            caller = false
+            fn.apply(this, arguments)
+        }
+    }
+    
 }

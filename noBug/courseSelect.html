@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Summer 2023</title>
+    <script src="courseSelect.js"></script>
+    </head>
+    <body>
+        <h2>Search Current Courses by Subject</h2>
+        <hr>
+        <p>Session:Summer 2023</p>
+        <p>Subject:</p> <select name="cars" id="cars" size="10" onchange="choSub()" multiple>
+            <option value="Courses info/EECS.html">Electrical Engineering and Computer Science</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+            </select>
+            <br>
+            <button onclick="Search()">Search Courses</button>
+            <p id="output"></p>
+    </body>
+    </html>

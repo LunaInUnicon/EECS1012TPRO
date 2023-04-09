@@ -1,5 +1,8 @@
-p{
-  color: red ;
+
+/*creating the shake animation*/
+  
+h2{
+  animation:  shake 0.8s  ;
 }
 
 @keyframes shake{
